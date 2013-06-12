@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Main" >
+
+        <EditText
+            android:id="@+id/editSpieler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/spieler" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startGame"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/schwierigkeit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="schwierigkeitEinstellen"
+            android:text="@string/medium" />
+
+        <Button
+            android:id="@+id/highscore_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="highscore"
+            android:text="@string/highscore" />
+
+</LinearLayout>

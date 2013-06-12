@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lopparg.lopparg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kreis"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lopparg.lopparg.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lopparg.lopparg.Schwierigkeit"
+            android:label="@string/title_activity_schwierigkeit"
+            android:parentActivityName="com.lopparg.lopparg.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lopparg.lopparg.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lopparg.lopparg.Highscore"
+            android:label="@string/title_activity_highscore"
+            android:parentActivityName="com.lopparg.lopparg.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lopparg.lopparg.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.lopparg.lopparg.Game"
+            android:label="@string/title_activity_game"
+            android:parentActivityName="com.lopparg.lopparg.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lopparg.lopparg.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

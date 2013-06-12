@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Schwierigkeit" >
+
+	<RadioGroup
+	    android:id="@+id/schwierigkeit_group"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/leicht_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leicht" />
+
+    <RadioButton
+        android:id="@+id/medium_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/medium" />
+
+    <RadioButton
+        android:id="@+id/schwer_radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schwer" />
+    </RadioGroup>
+    
+
+</LinearLayout>
